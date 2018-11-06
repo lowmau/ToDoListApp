@@ -1,0 +1,24 @@
+<div class="container">
+<div class="row" style="margin-top: 30px">
+	<h1>User_List</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+   <% @user_lists.each do |user_list| %>
+		<tr>
+			<td><%= user_list.list.name %></td>
+			<td><%= user_list.list.description %></td>
+		</tr>
+	<% end %>
+  </tbody>
+</table>
+</div>
+</div>

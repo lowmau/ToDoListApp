@@ -1,0 +1,30 @@
+<div class="container">
+	<div class="row" style="margin-top: 30px">
+		<div class="body">
+		<h1>Detalle</h1>
+
+		<img src="<%= @list.photo %>">
+		<h5><%= @list.name %></h5>
+		<p><%= @list.description %></p>
+
+		<h1>Ranking</h1>
+		<table class="table">
+		  <thead>
+		    <tr>
+		      <th>Name</th>
+		      <th colspan="3"></th>
+		    </tr>
+		  </thead>
+
+		  <tbody>
+		   <% @user_details.each do |user_list| %>
+				<tr>
+					<td><%= user_list.email %></td>
+				</tr>
+			<% end %>
+		  </tbody>
+		</table>
+
+		</div>
+	</div>
+</div>
